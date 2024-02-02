@@ -6,14 +6,14 @@ import {
   useOrganization,
 } from "@clerk/nextjs";
 
-import SearchInput from "./search-input";
 import { InviteButton } from "./invite-button";
+import { SearchInput } from "./search-input";
 
 export const Navbar = () => {
   const { organization } = useOrganization();
 
   return (
-    <div className="flex items-center gap-x-4 p-5 bg-green-500">
+    <div className="flex items-center gap-x-4 p-5 text-black">
       <div className="hidden lg:flex lg:flex-1">
         <SearchInput />
       </div>
