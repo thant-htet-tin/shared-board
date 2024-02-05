@@ -45,7 +45,7 @@ export const BoardCard = ({
     api.board.favorite
   );
   const { mutate: onUnfavorite, pending: pendingUnfavorite } = useApiMutation(
-    api.board.favorite
+    api.board.unFavorite
   );
 
   const toggleFavorite = () => {
