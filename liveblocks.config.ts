@@ -28,7 +28,7 @@ type Storage = {
 type UserMeta = {
   id?: string;
   info?: {
-    name?: string;
+    name?: string | "Teammate";
     picture?: string;
   };
 };
